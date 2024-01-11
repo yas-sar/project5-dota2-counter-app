@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Include the "Luckiest Guy" font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Title of the page -->
+    <div id="counter-app">
+        <h1 id="title">Dota2 Win/Loss Tracker</h1>
+
+        <!-- Container for the win/loss score tracker -->
+        <div id="score-tracker">
+            <div>
+                <!-- Display the number of wins -->
+                <h2 id="wins-el">WINS</h2>
+                <h2 id="winCount-el">0</h2>
+            </div>
+            <div>
+                <!-- Display the number of losses -->
+                <h2 id="loss-el">LOSS</h2>
+                <h2 id="lossCount-el">0</h2>
+            </div>
+        </div>
+
+        <!-- Display total games -->
+        <div>
+            <h2 id="totalGames-el">TOTAL GAMES</h2>
+            <h2 id="totalCount-el">0</h2>
+        </div>
+
+        <!-- Container for the win and loss buttons -->
+        <div id="win-loss-btn">
+            <!-- Button to increment wins -->
+            <button id="win-btn" onclick="win()">WIN</button>
+            <!-- Button to increment losses -->
+            <button id="loss-btn" onclick="loss()">LOSS</button>
+        </div>
+
+        <!-- Container for the reset button -->
+        <div id="only-reset-btn">
+            <!-- Button to reset the scores -->
+            <button id="reset-btn" onclick="reset()">RESET</button>
+        </div>
+
+        <!-- Display the label for previous games -->
+        <div>
+            <p id="prevgames-el">PREVIOUS GAMES</p>
+            <p id="gamescount-el"></p>
+        </div>
+
+        <!-- Link to the external JavaScript file -->
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>

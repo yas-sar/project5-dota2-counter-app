@@ -1,0 +1,160 @@
+/* Apply global styles to the body */
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #454545;
+    color: #ffcc00;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style for the main container */
+#counter-app {
+    border: 2px solid #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('images/dota-2-logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300px; /* Set the max-width to 300px */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Style for the main title */
+#title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Style for the score tracker section */
+#score-tracker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#score-tracker div {
+    text-align: center;
+}
+
+/* Style for wins */
+#wins-el {
+    color: #ffcc00;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 20px;
+}
+
+#winCount-el {
+    font-size: 35px;
+    font-weight: bold;
+    color: #33cc33;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Style for losses */
+#loss-el {
+    color: #ffcc00;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 20px;
+}
+
+#lossCount-el {
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Style for total games */
+#totalGames-el {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#totalCount-el {
+    font-size: 35px;
+    font-weight: bold;
+    color: lightblue;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Style for win and loss buttons */
+#win-loss-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#win-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: darkgreen;
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#loss-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: darkred;
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/* Style for reset button */
+#only-reset-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    color: navy;
+    border: 1px solid navy;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/* Style for label of previous games */
+#prevgames-el {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Style for games count */
+#gamescount-el {
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+/* Style for wins in games count */
+#gamescount-el .w {
+    color: #33cc33;
+}
+
+/* Style for losses in games count */
+#gamescount-el .l {
+    color: darkred;
+}
